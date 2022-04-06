@@ -15,6 +15,9 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportActionBar().hide();
 
+        this.endSplashScreen();
+    }
+    private void endSplashScreen(){
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
