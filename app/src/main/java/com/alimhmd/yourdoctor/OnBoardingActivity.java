@@ -23,12 +23,23 @@ public class OnBoardingActivity extends AppCompatActivity {
     public void skipOnBoarding(View view) {
         startActivity(new Intent(OnBoardingActivity.this, SignUp.class));
     }
-    public void nextOnBoarding(View view){
+
+    public void nextOnBoarding(View view) {
 
         this.currentOnBoarding++;
 //        skipNextContainer.removeView(findViewById(R.id.vectorImage));
-        findViewById(R.id.vectorImage1).setVisibility(View.GONE);
-        if(this.currentOnBoarding >= this.ON_BOARDING_NB){
+
+        if (this.currentOnBoarding == 2) {
+            findViewById(R.id.vectorImage1).setVisibility(View.GONE);
+            findViewById(R.id.title1).setVisibility(View.GONE);
+            findViewById(R.id.vectorImage2).setVisibility(View.VISIBLE);
+            findViewById(R.id.title2).setVisibility(View.VISIBLE);
+        } else if (this.currentOnBoarding == 3) {
+            findViewById(R.id.vectorImage2).setVisibility(View.GONE);
+            findViewById(R.id.title2).setVisibility(View.GONE);
+            findViewById(R.id.vectorImage3).setVisibility(View.VISIBLE);
+            findViewById(R.id.title3).setVisibility(View.VISIBLE);
+        } else if (this.currentOnBoarding >= this.ON_BOARDING_NB) {
             startActivity(new Intent(OnBoardingActivity.this, SignUp.class));
         }
     }

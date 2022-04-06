@@ -19,14 +19,45 @@
         app:srcCompat="@drawable/ic_yourdoctor_logo_splashscreen" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/title1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="sans-serif-black"
         android:text="Find your Doctor"
         android:textColor="@color/text_color1"
         android:textSize="26sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Storage your Medical Records"
+        android:textColor="@color/text_color1"
+        android:textSize="26sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Discuss in the Forum"
+        android:textColor="@color/text_color1"
+        android:textSize="26sp"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,9 +68,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/title1"
         app:srcCompat="@drawable/ic_welcome1" />
+
+    <ImageView
+        android:id="@+id/vectorImage2"
+        android:layout_width="418dp"
+        android:layout_height="284dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/ic_welcome2"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/vectorImage1"
+        app:layout_constraintTop_toBottomOf="@+id/title2" />
+
+    <ImageView
+        android:id="@+id/vectorImage3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/ic_welcome3"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title3" />
 
     <LinearLayout
         android:layout_width="0dp"
