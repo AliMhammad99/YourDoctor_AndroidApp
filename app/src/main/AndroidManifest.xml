@@ -10,9 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.YourDoctor">
         <activity
-            android:name=".HomeActivity"
-            android:label="Home"
+            android:name=".SignUp"
             android:exported="false" />
+        <activity
+            android:name=".OnBoardingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:label="Home" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

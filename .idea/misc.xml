@@ -6,7 +6,9 @@
         <entry key="..\:/Users/Public/AndroidStudioPrjcts/YourDoctor/app/src/main/res/drawable/ic_splashscreen_back_elements.xml" value="0.167" />
         <entry key="..\:/Users/Public/AndroidStudioPrjcts/YourDoctor/app/src/main/res/drawable/ic_yourdoctor_logo_splashscreen.xml" value="0.167" />
         <entry key="..\:/Users/Public/AndroidStudioPrjcts/YourDoctor/app/src/main/res/layout/activity_home.xml" value="0.25" />
-        <entry key="..\:/Users/Public/AndroidStudioPrjcts/YourDoctor/app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="..\:/Users/Public/AndroidStudioPrjcts/YourDoctor/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Public/AndroidStudioPrjcts/YourDoctor/app/src/main/res/layout/activity_onboarding.xml" value="0.25" />
+        <entry key="..\:/Users/Public/AndroidStudioPrjcts/YourDoctor/app/src/main/res/layout/activity_welcome.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>

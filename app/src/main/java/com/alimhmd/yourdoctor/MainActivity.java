@@ -12,16 +12,19 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        getSupportActionBar().hide();
-
+        MainActivity.removeActionBar(this);
         this.endSplashScreen();
     }
+
+    public static void removeActionBar(AppCompatActivity activity){
+        activity.getSupportActionBar().hide();
+    }
+
     private void endSplashScreen(){
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(MainActivity.this, HomeActivity.class));
+                startActivity(new Intent(MainActivity.this, OnBoardingActivity.class));
                 finish();
             }
         }, 3000);
