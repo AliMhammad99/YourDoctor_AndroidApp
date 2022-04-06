@@ -1,33 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.alimhmd.yourdoctor">
+    package="com.yourdoctor.doctorsappointment">
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_icon"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/ic_icon"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.YourDoctor">
+        android:theme="@style/Theme.DoctorsAppointment">
+        <activity android:name="com.yourdoctor.doctorsappointment.DoctorMainActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name="com.yourdoctor.doctorsappointment.PatientFragments.FixAppointment" />
         <activity
-            android:name=".SignUp"
-            android:exported="false" />
+            android:name="com.yourdoctor.doctorsappointment.PatientRegister"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".OnBoardingActivity"
-            android:exported="false" />
+            android:name="com.yourdoctor.doctorsappointment.PatientLoginRegisterChoice"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".HomeActivity"
-            android:exported="false"
-            android:label="Home" />
+            android:name="com.yourdoctor.doctorsappointment.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name="com.yourdoctor.doctorsappointment.AskDoctorPatient"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.yourdoctor.doctorsappointment.SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.yourdoctor.doctorsappointment.PatientMainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
