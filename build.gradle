@@ -7,3 +7,14 @@ plugins {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+dependencies {
+    implementation 'com.google.android.material:material:<version>'
+}
